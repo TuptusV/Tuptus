@@ -8,7 +8,8 @@ print("Reset [P]")
 print("MaxCam")
 print("--------------")
 
---UpdateGui
+
+local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
 local TextLabel_2 = Instance.new("TextLabel")
@@ -19,150 +20,151 @@ local TextLabel_6 = Instance.new("TextLabel")
 local TextLabel_7 = Instance.new("TextLabel")
 local TextLabel_8 = Instance.new("TextLabel")
 local TextLabel_9 = Instance.new("TextLabel")
+local x = Instance.new("TextButton")
 local TextLabel_10 = Instance.new("TextLabel")
-local TextLabel_11 = Instance.new("TextLabel")
-local TextButton = Instance.new("TextButton")
 
+--Properties:
+	
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
-
-Frame.Parent = game.StarterGui.ScreenGui
+Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Frame.BorderColor3 = Color3.fromRGB(0, 12, 255)
-Frame.BorderSizePixel = 3
-Frame.Position = UDim2.new(0.419768155, 0, 0.296781898, 0)
-Frame.Size = UDim2.new(0, 262, 0, 340)
+Frame.BorderColor3 = Color3.fromRGB(14, 0, 111)
+Frame.BorderSizePixel = 2
+Frame.Position = UDim2.new(0.393054456, 0, 0.286413699, 0)
+Frame.Size = UDim2.new(0, 270, 0, 349)
 
 TextLabel.Parent = Frame
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
-TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.Position = UDim2.new(0.118320614, 0, 0.0264705885, 0)
-TextLabel.Size = UDim2.new(0, 200, 0, 50)
-TextLabel.Font = Enum.Font.SourceSansSemibold
+TextLabel.Position = UDim2.new(0.0444444455, 0, 0.0229226351, 0)
+TextLabel.Size = UDim2.new(0, 247, 0, 67)
+TextLabel.Font = Enum.Font.SourceSans
 TextLabel.Text = "WELCOME"
 TextLabel.TextColor3 = Color3.fromRGB(255, 0, 4)
-TextLabel.TextSize = 53.000
+TextLabel.TextSize = 51.000
 
 TextLabel_2.Parent = Frame
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_2.Position = UDim2.new(-0.190839693, 0, 0.102941178, 0)
-TextLabel_2.Size = UDim2.new(0, 264, 0, 86)
+TextLabel_2.Position = UDim2.new(0.0444444455, 0, 0.214899719, 0)
+TextLabel_2.Size = UDim2.new(0, 179, 0, 42)
 TextLabel_2.Font = Enum.Font.SourceSans
 TextLabel_2.Text = "Press \"F9\" to see features"
 TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.TextSize = 16.000
+TextLabel_2.TextSize = 20.000
+TextLabel_2.TextWrapped = true
 
 TextLabel_3.Parent = Frame
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_3.Position = UDim2.new(-0.255725205, 0, 0.144117653, 0)
-TextLabel_3.Size = UDim2.new(0, 264, 0, 86)
+TextLabel_3.Position = UDim2.new(0.459259272, 0, 0.90830946, 0)
+TextLabel_3.Size = UDim2.new(0, 178, 0, 42)
 TextLabel_3.Font = Enum.Font.SourceSans
-TextLabel_3.Text = "Last update: 29.08.2022"
+TextLabel_3.Text = "\"Made\" by - Tuptuś/ExtraW"
 TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.TextSize = 14.000
+TextLabel_3.TextSize = 11.000
+TextLabel_3.TextWrapped = true
 
 TextLabel_4.Parent = Frame
 TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_4.BackgroundTransparency = 1.000
-TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_4.Position = UDim2.new(0.0763358772, 0, 0.355882347, 0)
-TextLabel_4.Size = UDim2.new(0, 223, 0, 50)
-TextLabel_4.Font = Enum.Font.SourceSansSemibold
+TextLabel_4.Position = UDim2.new(0.166666672, 0, 0.438395441, 0)
+TextLabel_4.Size = UDim2.new(0, 179, 0, 42)
+TextLabel_4.Font = Enum.Font.SourceSans
 TextLabel_4.Text = "New features:"
 TextLabel_4.TextColor3 = Color3.fromRGB(255, 0, 4)
-TextLabel_4.TextSize = 40.000
+TextLabel_4.TextSize = 25.000
+TextLabel_4.TextWrapped = true
 
 TextLabel_5.Parent = Frame
 TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_5.BackgroundTransparency = 1.000
-TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_5.Position = UDim2.new(0.156488538, 0, 0.850000024, 0)
-TextLabel_5.Size = UDim2.new(0, 264, 0, 86)
+TextLabel_5.Position = UDim2.new(-0.174074069, 0, 0.561604559, 0)
+TextLabel_5.Size = UDim2.new(0, 171, 0, 33)
 TextLabel_5.Font = Enum.Font.SourceSans
-TextLabel_5.Text = "TurekWare | \"Made\" by Tuptuś/ExtraW"
+TextLabel_5.Text = "- InfStam"
 TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_5.TextSize = 13.000
+TextLabel_5.TextSize = 20.000
 TextLabel_5.TextWrapped = true
 
 TextLabel_6.Parent = Frame
 TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_6.BackgroundTransparency = 1.000
-TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_6.Position = UDim2.new(-0.374045789, 0, 0.397058845, 0)
-TextLabel_6.Size = UDim2.new(0, 264, 0, 86)
+TextLabel_6.Position = UDim2.new(-0.174074069, 0, 0.60744983, 0)
+TextLabel_6.Size = UDim2.new(0, 171, 0, 33)
 TextLabel_6.Font = Enum.Font.SourceSans
-TextLabel_6.Text = "- InfStam"
+TextLabel_6.Text = "- MaxCam"
 TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_6.TextSize = 16.000
+TextLabel_6.TextSize = 20.000
+TextLabel_6.TextWrapped = true
 
 TextLabel_7.Parent = Frame
 TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_7.BackgroundTransparency = 1.000
-TextLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_7.Position = UDim2.new(-0.374045789, 0, 0.450000018, 0)
-TextLabel_7.Size = UDim2.new(0, 264, 0, 86)
+TextLabel_7.Position = UDim2.new(-0.19629629, 0, 0.656160474, 0)
+TextLabel_7.Size = UDim2.new(0, 171, 0, 33)
 TextLabel_7.Font = Enum.Font.SourceSans
-TextLabel_7.Text = "- MaxCam"
+TextLabel_7.Text = "- AntiGH"
 TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_7.TextSize = 16.000
+TextLabel_7.TextSize = 20.000
+TextLabel_7.TextWrapped = true
 
 TextLabel_8.Parent = Frame
 TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_8.BackgroundTransparency = 1.000
-TextLabel_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_8.Position = UDim2.new(-0.400763363, 0, 0.502941191, 0)
-TextLabel_8.Size = UDim2.new(0, 271, 0, 86)
+TextLabel_8.Position = UDim2.new(-0.148148134, 0, 0.702005744, 0)
+TextLabel_8.Size = UDim2.new(0, 171, 0, 33)
 TextLabel_8.Font = Enum.Font.SourceSans
-TextLabel_8.Text = "- AntiGH"
+TextLabel_8.Text = "- P to RESET"
 TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_8.TextSize = 16.000
+TextLabel_8.TextSize = 20.000
+TextLabel_8.TextWrapped = true
 
 TextLabel_9.Parent = Frame
 TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_9.BackgroundTransparency = 1.000
-TextLabel_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_9.Position = UDim2.new(-0.400763363, 0, 0.555882335, 0)
-TextLabel_9.Size = UDim2.new(0, 302, 0, 86)
+TextLabel_9.Position = UDim2.new(-0.174074054, 0, 0.750716329, 0)
+TextLabel_9.Size = UDim2.new(0, 171, 0, 33)
 TextLabel_9.Font = Enum.Font.SourceSans
-TextLabel_9.Text = "- [P] To RESET"
+TextLabel_9.Text = "- ChatSpy"
 TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_9.TextSize = 16.000
+TextLabel_9.TextSize = 20.000
+TextLabel_9.TextWrapped = true
+
+x.Name = "x"
+x.Parent = Frame
+x.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+x.BorderColor3 = Color3.fromRGB(0, 0, 0)
+x.Position = UDim2.new(0.933333337, 0, 0, 0)
+x.Size = UDim2.new(0, 18, 0, 18)
+x.Font = Enum.Font.SourceSans
+x.Text = "x"
+x.TextColor3 = Color3.fromRGB(0, 0, 0)
+x.TextSize = 17.000
 
 TextLabel_10.Parent = Frame
 TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_10.BackgroundTransparency = 1.000
-TextLabel_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_10.Position = UDim2.new(-0.446564883, 0, 0.614705861, 0)
-TextLabel_10.Size = UDim2.new(0, 302, 0, 86)
+TextLabel_10.Position = UDim2.new(-0.2074074, 0, 0.750716329, 0)
+TextLabel_10.Size = UDim2.new(0, 247, 0, 67)
 TextLabel_10.Font = Enum.Font.SourceSans
-TextLabel_10.Text = "- ChatSpy"
-TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_10.TextSize = 16.000
+TextLabel_10.Text = "More features later"
+TextLabel_10.TextColor3 = Color3.fromRGB(255, 0, 4)
+TextLabel_10.TextSize = 17.000
 
-TextLabel_11.Parent = Frame
-TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_11.BackgroundTransparency = 1.000
-TextLabel_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_11.Position = UDim2.new(-0.347328246, 0, 0.667647064, 0)
-TextLabel_11.Size = UDim2.new(0, 305, 0, 86)
-TextLabel_11.Font = Enum.Font.SourceSans
-TextLabel_11.Text = "More features later"
-TextLabel_11.TextColor3 = Color3.fromRGB(255, 0, 4)
-TextLabel_11.TextSize = 16.000
+-- Scripts:
 
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
-TextButton.Position = UDim2.new(0.923664093, 0, 0, 0)
-TextButton.Size = UDim2.new(0, 20, 0, 20)
-TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "x"
-TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.TextSize = 25.000
---UpdateGui
+local function PFRHF_fake_script() -- x.LocalScript 
+	local script = Instance.new('LocalScript', x)
+
+	local Frame = script.Parent.Parent
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Frame.Visible = false
+	end)
+end
+coroutine.wrap(PFRHF_fake_script)()
 
 function onKeyPress(actionName, userInputState, inputObject)
    if userInputState == Enum.UserInputState.Begin then
